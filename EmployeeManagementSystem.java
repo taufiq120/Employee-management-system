@@ -5,7 +5,7 @@ public class EmployeeManagementSystem {
         Scanner scanner = new Scanner(System.in);
         ManagementSystem managementSystem = new ManagementSystem();
 
-        // Load employees from file if available
+        // option to load employees from file if available
         managementSystem.loadEmployeesFromFile("employees.dat");
 
         while (true) {
@@ -17,14 +17,13 @@ public class EmployeeManagementSystem {
             System.out.print("Choose an option: ");
             
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline character
-            
+            scanner.nextLine();             
             switch (choice) {
                 case 1:
                     try {
                         System.out.print("Enter Employee ID: ");
                         int id = scanner.nextInt();
-                        scanner.nextLine(); // Consume newline character
+                        scanner.nextLine();
                         
                         System.out.print("Enter Employee Name: ");
                         String name = scanner.nextLine();
